@@ -30,6 +30,7 @@ body {
   align-items: center;
 }
 
+/*========================PANDA HEADER======================*/
 .panda__header__parent {
   width: 100%;
   display: flex;
@@ -72,6 +73,9 @@ body {
   transform: rotate(48deg);
 }
 
+
+/*=======panda eye=======*/
+
 .panda__header__eye {
   width: 30px;
   height: 40px;
@@ -107,6 +111,9 @@ body {
     margin-top: 22px;
     transition: all 1s ease;
 }
+
+
+/*=====panda mooth=====*/
 
 .panda__header__mooth {
   width: 0;
@@ -159,6 +166,8 @@ body {
 }
 
 
+
+/*========================PANDA HAND======================*/
 .panda__hand__parent{
     display: flex;
     justify-content: space-between;
@@ -174,7 +183,6 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
 
 
  .panda__hand.left{
@@ -212,6 +220,9 @@ body {
     transition: all 1s ease;
 }
 
+
+/*========================PANDA FORMULAIRE======================*/
+
 .panda__formulaire {
   background-color: white;
   display: flex;
@@ -240,6 +251,7 @@ body {
   background-color: antiquewhite;
   border-radius: 20px;
    padding-left: 15px;
+   cursor: pointer;
 }
 
 .panda__formulaire input:focus {
@@ -267,8 +279,11 @@ body {
   font-weight: bold;
   font-size: 18px;
   width: 150px;
+  cursor: pointer;
 }
 
+
+/*========================PANDA FOOTER======================*/
 .panda__footer {
   display: flex;
   justify-content: space-between;
@@ -323,4 +338,47 @@ body {
 .panda__footer__thumb div:nth-child(3),
 .panda__footer__thumb div:nth-child(1) {
   margin-top: 5px;
+}
+
+@media (max-width:400px){
+
+  .panda__formulaire__username div, .panda__formulaire__password div {
+    width: 250px;
+}
+
+.panda__formulaire {
+  padding: 20px;
+}
+
+.panda__hand.right {
+  right: 10px;
+}
+
+.panda__hand.left{
+  left: 10px;
+}
+
+
+.panda__hand.active {
+  height: 156px;
+}
+
+.two{
+  margin-right: 10px;
+}
+
+.one {
+  margin-left: 10px;
+}
+
+
+.panda__hand.left.active {
+  transform: rotate(215deg);
+  left: 45px;
+} 
+
+.panda__hand.right.active {
+  transform: rotate(-215deg);
+  right: 45px;
+}
 }
